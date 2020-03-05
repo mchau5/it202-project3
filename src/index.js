@@ -1,5 +1,5 @@
-import InputHandler from "/src/input.js";
-import Player from "/src/player.js";
+import InputHandler from "/it202-project3/src/input.js";
+import Player from "/it202-project3/src/player.js";
 
 let canvas = document.getElementById("gameScreen");
 
