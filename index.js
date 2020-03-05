@@ -2,7 +2,7 @@ import Paddle from "/paddle.js";
 import InputHandler from "/input.js";
 
 
-let canvas = document.getElementById("gameScreen")
+let canvas = document.getElementById("gameScreen");
 
 let ctx = canvas.getContext('2d');
 
