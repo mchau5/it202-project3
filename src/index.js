@@ -1,4 +1,3 @@
-import Paddle from "/src/paddle.js";
 import InputHandler from "/src/input.js";
 import Player from "/src/player.js";
 
@@ -13,13 +12,10 @@ const GAME_HEIGHT = 720;
 
 
 
-	let paddle = new Paddle(GAME_WIDTH, GAME_HEIGHT);
-	
-	let player = new Player();
+	let player = new Player(GAME_WIDTH, GAME_HEIGHT);
 	
 
-	new InputHandler(paddle);
-
+	new InputHandler(player);
 	let lastTime = 0;
 
 	
@@ -37,11 +33,9 @@ const GAME_HEIGHT = 720;
 		
 		ctx.clearRect(0,0, GAME_WIDTH, GAME_HEIGHT);
 		
-		paddle.update(deltaTime);
+		player.update(deltaTime);
 
 
-		
-		paddle.draw(ctx);
 		
 		player.draw(ctx);
 		

@@ -1,6 +1,6 @@
 export default class InputHandler {
 	
-	constructor(paddle) {
+	constructor(player) {
 	
 		document.addEventListener("keydown", event => {
 			
@@ -8,17 +8,17 @@ export default class InputHandler {
 			switch(event.keyCode){
 					
 				case 37:
-					if(paddle.speed < 0){
-						paddle.stop();
+					if(player.speed < 0){
+						player.stop();
 					}
-					paddle.moveLeft();
+					player.moveLeft();
 					break;
 					
 				case 39:
-					if(paddle.speed > 0){
-						paddle.stop();
+					if(player.speed > 0){
+						player.stop();
 					}
-					paddle.moveRight();
+					player.moveRight();
 					break;
 					
 			}
@@ -32,11 +32,11 @@ export default class InputHandler {
 			switch(event.keyCode){
 					
 				case 37:
-					paddle.stop();
+					player.stop();
 					break;
 					
 				case 39:
-					paddle.stop();
+					player.stop();
 					break;
 					
 			}
