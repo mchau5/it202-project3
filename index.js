@@ -1,6 +1,3 @@
-
-
-
 import Paddle from "/paddle.js";
 import InputHandler from "/input.js";
 
