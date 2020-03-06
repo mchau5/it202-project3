@@ -6,10 +6,10 @@ import Coin from "/src/coin.js";
 
 
 
-
 const GAMESTATE = {PAUSED:0,RUNNING:1,MENU:2,GAMEOVER:3};
 
 export default class Game{
+	
 		constructor(gameWidth, gameHeight){
 			
 			
@@ -21,7 +21,7 @@ export default class Game{
 			this.coin = new Coin(this);
 			new InputHandler(this.player,this);
 			this.gameObjects = [];
-			this.lives = 100;
+			this.lives = 1;
 
 			this.frames = 0;
 			
