@@ -6,8 +6,8 @@ export default class Harm{
 		this.gameWidth = game.gameWidth;
 		this.gameHeight = game.gameHeight;
 		this.game = game;
-		this.width = 30 ;
-		this.height = 30;
+		this.width = 150 ;
+		this.height = 150;
 		
 		this.position = { x: 500, y: 0 };
 		this.speed = { y : 5  };
@@ -27,16 +27,18 @@ export default class Harm{
 	update(deltaTime){
 		
 
-		console.log(this.position.y);
 
-
+		if(this.delete == false){
 		this.position.y += this.speed.y;
-		
-		
-		if(this.position.y + this.height > this.gameHeight || this.position.y < 0) {
-			this.delete = true;
 		}
-			
+		
+		if(this.position.y > this.gameHeight) {
+			this.delete = true;
+			this.game.lives--;
+		}
+		
+		
+		
 		
 
 		if(detectCollision(this.game.player, this)){

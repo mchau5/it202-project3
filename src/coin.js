@@ -27,7 +27,6 @@ export default class Coin{
 	update(deltaTime){
 		
 
-		console.log(this.position.y);
 
 
 		this.position.y += this.speed.y;

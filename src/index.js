@@ -7,10 +7,9 @@ let ctx = canvas.getContext('2d');
 
 const GAME_WIDTH = 1280;
 
-const GAME_HEIGHT = 720;
+const GAME_HEIGHT = 620;
 
 let game = new Game(GAME_WIDTH,GAME_HEIGHT);
-game.start();
 
 
 let lastTime = 0;

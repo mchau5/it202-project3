@@ -1,6 +1,6 @@
 export default class InputHandler {
 	
-	constructor(player) {
+	constructor(player,game) {
 	
 		document.addEventListener("keydown", event => {
 			
@@ -21,6 +21,13 @@ export default class InputHandler {
 					player.moveRight();
 					break;
 					
+				case 27:
+					game.togglePause();
+					break;
+					
+				case 32:
+					game.start();
+					break;
 			}
 			
 		});
