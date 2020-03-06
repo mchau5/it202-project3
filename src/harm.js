@@ -42,8 +42,8 @@ export default class Harm{
 
 		if(detectCollision(this.game.player, this)){
 			this.delete = true;
+			this.position.x = -9999;
 			this.game.lives--;
-			console.log(this.game.lives);
 		}
 
 		

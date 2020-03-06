@@ -21,7 +21,7 @@ export default class Game{
 			this.coin = new Coin(this);
 			new InputHandler(this.player,this);
 			this.gameObjects = [];
-			this.lives = 1;
+			this.lives = 100;
 
 			this.frames = 0;
 			
@@ -58,6 +58,7 @@ export default class Game{
 // 		}
 		
 		this.gameObjects.forEach(object => object.update(deltaTime));
+		console.log(this.lives);
 		this.frames++;
 
 		
