@@ -1,7 +1,7 @@
-import InputHandler from "/src/input.js";
-import Player from "/src/player.js";
-import Harm from "/src/harm.js";
-import Coin from "/src/coin.js";
+import InputHandler from "./input.js";
+import Player from "./player.js";
+import Harm from "./harm.js";
+import Coin from "./coin.js";
 
 
 
@@ -21,7 +21,7 @@ export default class Game{
 			this.coin = new Coin(this);
 			new InputHandler(this.player,this);
 			this.gameObjects = [];
-			this.lives = 100;
+			this.lives = 1;
 
 			this.frames = 0;
 			
