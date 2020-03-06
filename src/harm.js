@@ -47,28 +47,11 @@ export default class Harm{
 	
 	
 	
-<<<<<<< HEAD
 }
-=======
+
 	
 	
 	
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-}
->>>>>>> aab2e733953d75c85d37e16be6ba763082e86296
+
