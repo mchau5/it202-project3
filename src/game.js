@@ -1,7 +1,7 @@
-import InputHandler from "input.js";
-import Player from "player.js";
-import Harm from "harm.js";
-import Coin from "coin.js";
+import InputHandler from "./input.js";
+import Player from "./player.js";
+import Harm from "./harm.js";
+import Coin from "./coin.js";
 
 
 
