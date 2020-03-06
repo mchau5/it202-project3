@@ -21,7 +21,7 @@ export default class Game{
 			this.coin = new Coin(this);
 			new InputHandler(this.player,this);
 			this.gameObjects = [];
-			this.lives = 100;
+			this.lives = 1;
 
 			this.frames = 0;
 			
