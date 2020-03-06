@@ -43,6 +43,7 @@ export default class Harm{
 		if(detectCollision(this.game.player, this)){
 			this.delete = true;
 			this.game.lives--;
+			console.log(this.game.lives);
 		}
 
 		
