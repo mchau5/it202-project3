@@ -29,17 +29,21 @@ export default class Coin{
 
 
 
-		this.position.y += this.speed.y;
+		if(this.delete == false){
+			this.position.y += this.speed.y;
+		}
 		
-		
-		if(this.position.y + this.height > this.gameHeight || this.position.y < 0) {
+		if(this.position.y > this.gameHeight) {
 			this.delete = true;
 		}
+		
 			
 		
 
 		if(detectCollision(this.game.player, this)){
 			this.delete = true;
+			this.position.x = -9999;
+			this.game.points++;
 		}
 
 		

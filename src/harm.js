@@ -29,7 +29,7 @@ export default class Harm{
 
 
 		if(this.delete == false){
-		this.position.y += this.speed.y;
+			this.position.y += this.speed.y;
 		}
 		
 		if(this.position.y > this.gameHeight) {

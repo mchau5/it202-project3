@@ -22,6 +22,7 @@ export default class Game{
 			new InputHandler(this.player,this);
 			this.gameObjects = [];
 			this.lives = 1;
+			this.points = 0;
 
 			this.frames = 0;
 			
@@ -53,12 +54,10 @@ export default class Game{
 		if (this.gamestate === GAMESTATE.PAUSED || this.gamestate === GAMESTATE.MENU || this.gamestate === GAMESTATE.GAMEOVER){
 			return;
 		}
-// 		if (this.lives === 1){
-// 		this.harm2 = new Harm(this);	
-// 		}
+
 		
 		this.gameObjects.forEach(object => object.update(deltaTime));
-		console.log(this.lives);
+		console.log(this.points);
 		this.frames++;
 
 		
