@@ -22,7 +22,11 @@ export default class Game{
 			new InputHandler(this.player,this);
 			this.gameObjects = [];
 			this.lives = 1;
+<<<<<<< HEAD
 			this.points = 0;
+=======
+
+>>>>>>> aab2e733953d75c85d37e16be6ba763082e86296
 			this.frames = 0;
 			
 		}
