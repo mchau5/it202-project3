@@ -23,7 +23,6 @@ export default class Game{
 			this.gameObjects = [];
 			this.lives = 1;
 			this.points = 0;
-
 			this.frames = 0;
 			
 		}
@@ -60,7 +59,14 @@ export default class Game{
 		console.log(this.points);
 		this.frames++;
 
-		
+		if (this.points >= 1){
+			
+			//i need to create a new projectile of coin here if the first one/ X amount is caught
+			//make an array of circles and push in new ones?
+			//https://stackoverflow.com/questions/22429242/randomly-spawn-one-by-one-object-in-canvas
+
+			
+		}
 		
 	}
 	

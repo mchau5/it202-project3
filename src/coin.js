@@ -10,7 +10,7 @@ export default class Coin{
 		this.height = 30;
 		
 		this.position = { x: 800, y: 0 };
-		this.speed = { y : 2  };
+		this.speed = { y : 10  };
 		
 		this.delete = false;
 	}
