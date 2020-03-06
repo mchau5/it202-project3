@@ -34,7 +34,6 @@ export default class Harm{
 		
 		if(this.position.y > this.gameHeight) {
 			this.delete = true;
-			this.game.lives--;
 		}
 		
 		
@@ -43,6 +42,7 @@ export default class Harm{
 
 		if(detectCollision(this.game.player, this)){
 			this.delete = true;
+			this.game.lives--;
 		}
 
 		
