@@ -1,20 +1,18 @@
 export default class Player {
 	
-	constructor(gameWidth, gameHeight){
+	constructor(game){
 
 		this.image = document.getElementById("player1");
-		this.gameWidth = gameWidth;
-		this.width = 277;
-		this.height = 522;
-		this.trueWidth = 277*.25;
-		this.trueHeight = 522*.25;
+		this.gameWidth = game.gameWidth;
+		this.width = 277*.25;
+		this.height = 522*.25;
 		this.maxSpeed = 7;
 		this.speed = 0;
 		this.position = {
 
-	x: gameWidth / 2 - this.trueWidth / 2,
+		x: game.gameWidth / 2 - this.width / 2,
 
-	y: gameHeight - this.trueHeight - 10,
+		y: game.gameHeight - this.height - 10,
 
 		};
 
@@ -44,7 +42,7 @@ export default class Player {
 	
 	draw(ctx){
 		
-		ctx.drawImage(this.image,this.position.x, this.position.y, this.trueWidth, this.trueHeight);
+		ctx.drawImage(this.image,this.position.x, this.position.y, this.width, this.height);
 
 		
 	}
@@ -58,9 +56,9 @@ export default class Player {
 			this.position.x = 0;
 		}
 		
-		if(this.position.x + this.trueWidth > this.gameWidth){
+		if(this.position.x + this.width > this.gameWidth){
 			
-			this.position.x = this.gameWidth - this.trueWidth;
+			this.position.x = this.gameWidth - this.width;
 			
 		}
 

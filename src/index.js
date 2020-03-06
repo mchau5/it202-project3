@@ -1,5 +1,4 @@
-import InputHandler from "/it202-project3/src/input.js";
-import Player from "/it202-project3/src/player.js";
+import Game from "/src/game.js";
 
 let canvas = document.getElementById("gameScreen");
 
@@ -10,13 +9,11 @@ const GAME_WIDTH = 1280;
 
 const GAME_HEIGHT = 720;
 
+let game = new Game(GAME_WIDTH,GAME_HEIGHT);
+game.start();
 
 
-	let player = new Player(GAME_WIDTH, GAME_HEIGHT);
-	
-
-	new InputHandler(player);
-	let lastTime = 0;
+let lastTime = 0;
 
 	
 
@@ -33,11 +30,10 @@ const GAME_HEIGHT = 720;
 		
 		ctx.clearRect(0,0, GAME_WIDTH, GAME_HEIGHT);
 		
-		player.update(deltaTime);
-
-
+		game.update(deltaTime);
+		game.draw(ctx);
 		
-		player.draw(ctx);
+		
 		
 		requestAnimationFrame(gameLoop);
 		
