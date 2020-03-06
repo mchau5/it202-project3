@@ -110,7 +110,7 @@ export default class Game{
 		ctx.font = "30px Arial";
 		ctx.fillStyle = "black";
 		ctx.textAlign = "center";
-		ctx.fillText("LIVES = ", 80 , this.gameHeight - 50);
+		ctx.fillText("LIVES = ", 80 , this.gameHeight - 500);
 		}
 	}
 	
